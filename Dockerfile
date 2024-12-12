@@ -1,7 +1,4 @@
 FROM theteamultroid/ultroid:main
-
-WORKDIR /rootedcyber
-
 RUN mkdir Termux-Ultroid
 RUN cd T*d;git clone https://github.com/TeamUltroid/Ultroid
 
@@ -15,6 +12,3 @@ RUN bash -c "$(curl -fsSl https://gist.githubusercontent.com/rooted-cyber/edc0ac
 
 RUN bash -c "$(curl -fsSl https://gist.githubusercontent.com/rooted-cyber/1bd2b7d3eb4d66ab06ab5e83098395e3/raw/cpp)"
 
-RUN wget -O .env
-
-RUN cd T*d;cd Ultroid;bash startup
